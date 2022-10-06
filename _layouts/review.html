@@ -9,6 +9,8 @@ layout: post
 
    {% if content == "" %}
 
+ <article>
+
    <figure class="empty-review">
    {% if page.cover %}
    <img  class ="empty-review-cover" alt="{{ page.title }} cover" src="{{ site.baseurl }}/assets/img/covers/{{ page.cover }}" />
@@ -23,7 +25,10 @@ layout: post
    </figure>
 
    {% assign status = page.status | upcase %}
+
+   <div class="clearfix">
    <h4> {{status}} </h4>
+   </div>
 
   {% else %}
 
@@ -48,9 +53,13 @@ layout: post
     {% if page.end %} End Date: {{page.end | date: "%-d %B %Y"}}. {% endif %}
     </h4>
 
-    {{ content }}
+    <div class="clearfix">
+     {{content}} 
+    </div>
 
     {% endif %}
+
+    </article>
 
     <style>
     figure {
