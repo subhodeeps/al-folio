@@ -8,10 +8,10 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   address: >
-    <p>Kolkata, July 2022.</p> 
+    <p>Kolkata, July 2022.</p>
 news: true  # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+social: false  # includes social icons at the bottom of the page
 ---
 Hey! I am Subhodeep, a Ph.D. student at the Indian Institute of Information Technology, Allahabad. I'm working under the supervision of [Dr. Srijit Bhattacharjee](http://profile.iiita.ac.in/srijit/) and my broad area of interest is *gravitational and black hole physics* with an emphasis on the internal structure of black holes, quasinormal modes, gravitational lensing and black hole shadows. In simple terms, I use theoretical and computational tools to probe classical and quantum aspects of black holes and try to understand what they can say about the nature of reality. I am also interested in the prospect of doing fundamental physics with gravitational waves. To know more about my work, please check out my [publications page](/al-folio/publications/).
 

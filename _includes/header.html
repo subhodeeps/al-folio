@@ -20,12 +20,21 @@
               {{- site.title -}}
             {%- endif -%}
           </a>
-          {%- elsif site.enable_navbar_social -%}
           <!-- Social Icons -->
           <div class="navbar-brand social">
-            {% include social.html %}
+            {% include social_index.html %}
           </div>
+
           {% endif %}
+
+          <!-- Social Icons -->
+          {%- if site.enable_navbar_social or page.title == "about" -%}
+            <div class="navbar-brand social">
+              {% include social_index.html %}
+            </div>
+            {% endif %}
+
+
           <!-- Navbar Toggle -->
           <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="sr-only">Toggle navigation</span>
@@ -51,16 +60,6 @@
                   {%- endif -%}
                 </a>
               </li>
-              {% if site.blog_nav_title %}
-              <!-- Blog -->
-              <li class="nav-item {% if page.url contains 'blog' %}active{% endif %}">
-                <a class="nav-link" href="{{ '/blog/' | relative_url }}">{{ site.blog_nav_title }}
-                  {%- if page.url contains 'blog' -%}
-                  <span class="sr-only">(current)</span>
-                  {%- endif -%}
-                </a>
-              </li>
-              {%- endif %}
 
               <!-- Other pages -->
               {%- assign sorted_pages = site.pages | sort: "nav_order" -%}
@@ -94,6 +93,19 @@
               {%- endif -%}
               {%- endif -%}
               {% endfor -%}
+
+              {% if site.blog_nav_title %}
+              <!-- Blog -->
+              <li class="nav-item {% if page.url contains 'blog' %}active{% endif %}">
+                <a class="nav-link" href="{{ '/blog/' | relative_url }}">{{ site.blog_nav_title }}
+                  {%- if page.url contains 'blog' -%}
+                  <span class="sr-only">(current)</span>
+                  {%- endif -%}
+                </a>
+              </li>
+              {%- endif %}
+
+
               {%- if site.enable_darkmode %}
 
               <!-- Toogle theme mode -->
