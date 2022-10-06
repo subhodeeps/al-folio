@@ -2,24 +2,19 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
-
+subtitle: PhD Scholar (Physics) @ IIIT-A. Gravitation and Black Hole Physics.
 profile:
-  align: right
+  align: left
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
-
+    <p>Kolkata, July 2022.</p> 
 news: true  # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
+Hey! I am Subhodeep, a Ph.D. student at the Indian Institute of Information Technology, Allahabad. I'm working under the supervision of [Dr. Srijit Bhattacharjee](http://profile.iiita.ac.in/srijit/) and my broad area of interest is *gravitational and black hole physics* with an emphasis on the internal structure of black holes, quasinormal modes, gravitational lensing and black hole shadows. In simple terms, I use theoretical and computational tools to probe classical and quantum aspects of black holes and try to understand what they can say about the nature of reality. I am also interested in the prospect of doing fundamental physics with gravitational waves. To know more about my work, please check out my [publications page](/al-folio/publications/).
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+My interest in physics and mathematics are however wide-ranging; beyond my graduate research work, I am keenly interested in exploring dynamical systems and applications of machine learning techniques in physical sciences. I also take a lot of pleasure in teaching physics, mathematics and programming, and I am actively involved in assisting my supervisor in teaching a diverse range of subjects like numerical methods and computational physics, biostatistics, Python programming, and classical and quantum mechanics.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I also enjoy meeting and collaborating with new people. So, please feel free to get in touch if you would like to discuss and study some of the broad topics that I've mentioned!
