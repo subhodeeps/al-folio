@@ -20,19 +20,14 @@
               {{- site.title -}}
             {%- endif -%}
           </a>
-          <!-- Social Icons -->
-          <div class="navbar-brand social">
-            {% include social_index.html %}
-          </div>
-
           {% endif %}
 
           <!-- Social Icons -->
-          {%- if site.enable_navbar_social or page.title == "about" -%}
+
             <div class="navbar-brand social">
               {% include social_index.html %}
             </div>
-            {% endif %}
+            
 
 
           <!-- Navbar Toggle -->
