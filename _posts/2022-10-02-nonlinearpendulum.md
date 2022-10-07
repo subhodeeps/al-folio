@@ -91,7 +91,7 @@ Notice that
 - although our system is autonomous (that is, the RHS is independent of time), we still include the independent variable, this is because our ODE solvers are designed to accept functions which depend on both the variables.
    - the order of the arguments in the function signature is important, `odeint` expects the independent variable first.
    - moreover, we set $t$ to take a default value $(0)$, so that can avoid passing a superficial argument while plotting the functions; we keep the $t$ to ensure we can use the same function for numerically solving the ODEs and for plotting the phase portrait.
-   - **note** a better approach would be to use `solve_ivp`
+   - **note** a better approach would be to use `solve_ivp`.
 
 Our first order of business is to generate the phase portrait: we have to essentially sketch the vector field
 $$
