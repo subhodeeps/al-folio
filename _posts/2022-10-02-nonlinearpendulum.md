@@ -62,7 +62,7 @@ Our task is to analyse the behaviour of this system, and we do that by
 
 We shall use python to perfrom the above tasks. We begin by importing suitable python libraries,
 - `numpy` to perform manipulations over numeric arrays
-- `scipy.integrate.solve_ivp` to numerically solve our ODEs
+- `scipy.integrate.odeint` to numerically solve our ODEs
 - `matplotlib` to plot the results
 - `seaborn` to make the graphs look pretty.
 
@@ -89,8 +89,9 @@ def f(S, t=0):
 Notice that
 - our function takes two arguments $S$ and $t$.
 - although our system is autonomous (that is, the RHS is independent of time), we still include the independent variable, this is because our ODE solvers are designed to accept functions which depend on both the variables.
-   - the order of the arguments in the function signature is important, `solve_ivp` expects the independent variable first.
+   - the order of the arguments in the function signature is important, `odeint` expects the independent variable first.
    - moreover, we set $t$ to take a default value $(0)$, so that can avoid passing a superficial argument while plotting the functions; we keep the $t$ to ensure we can use the same function for numerically solving the ODEs and for plotting the phase portrait.
+   - **note** a better approach would be to use `solve_ivp`
 
 Our first order of business is to generate the phase portrait: we have to essentially sketch the vector field
 $$
